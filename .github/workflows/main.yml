@@ -34,7 +34,16 @@ jobs:
         uses: actions/checkout@v4
       - name: Repo list
         run: ls
-      - name: Test job
-        run: echo "this is a test job"
+      - name: Setup-Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm ci
+      - name: Run test
+        run: npm test
+          
+        
+        
      
       
