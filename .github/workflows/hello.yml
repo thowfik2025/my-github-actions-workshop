@@ -2,6 +2,8 @@ name: Hello World Training Workflow
 on:
   workflow_dispatch:
   push:
+    branches:
+      -main
   issues:
     types: [opened,edited]
 jobs:
