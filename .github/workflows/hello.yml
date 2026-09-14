@@ -19,7 +19,7 @@ jobs:
           - name: Read README
             run: cat README.md
           - name: Greet the user
-            run: echo "Hello World! from push"
+            run: echo "Hello World! from test branch"
           - name: Show environment variables
             run: |
               echo "Hello $MY_ENV"
