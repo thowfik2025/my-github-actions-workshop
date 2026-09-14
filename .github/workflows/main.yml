@@ -28,7 +28,12 @@ jobs:
   test:
     needs: build
     runs-on: ubuntu-latest
+    
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Repo list
+        run: ls
       - name: Test job
         run: echo "this is a test job"
      
