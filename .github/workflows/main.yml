@@ -30,6 +30,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test job
-        run: echo"this is a test job"
+        run: echo "this is a test job"
      
       
