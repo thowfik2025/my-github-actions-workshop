@@ -3,6 +3,8 @@ on:
   workflow_dispatch
 jobs:
     greet:
+        env:
+          MY_ENV: "John Doe"
         runs-on: ubuntu-latest
         steps:
           - name: Checkout repository
@@ -13,4 +15,8 @@ jobs:
             run: cat README.md
           - name: Greet the user
             run: echo "Hello World!"
+          - name: Show environment variables
+            run: |
+              echo "Hello $MY_ENV"
+              echo "Hello $GITHUB_ACTOR"
             
