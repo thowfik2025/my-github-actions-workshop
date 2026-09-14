@@ -25,6 +25,5 @@ jobs:
         with:
           name: coverage-report
           path: coverage/
-      - name: Simulate failure
-        run: exit 1
+     
       
