@@ -1,7 +1,7 @@
 name: Hello World Training Workflow
 on:
   workflow_dispatch
-job:
+jobs:
   greet:
       runs-on: ubuntu-latest
       steps:
