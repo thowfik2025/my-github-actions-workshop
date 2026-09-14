@@ -1,4 +1,4 @@
-import { Button, Header } from "@primer/react";
+import { Header } from "@primer/react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FunctionComponent, ReactElement } from "react";
