@@ -46,7 +46,9 @@ const AppHeader: FunctionComponent = (): ReactElement => {
       </Header.Item>
       <Header.Item>
         {isLoggedIn ? (
-          <GHStyledLink as="button" onClick={() => logout()}>Sign out</GHStyledLink>
+          <GHStyledLink as="button" onClick={() => logout()}>
+            Sign out
+          </GHStyledLink>
         ) : (
           <GHStyledLink to="/login">Sign in</GHStyledLink>
         )}
