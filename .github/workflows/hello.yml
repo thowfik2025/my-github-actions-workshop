@@ -9,6 +9,8 @@ jobs:
             uses: actions/checkout@v4
           - name: List repository files
             run: ls
+          - name: Read Readm.md
+            run: cat Readme.md
           - name: Greet the user
             run: echo "Hello World!"
             
