@@ -1,4 +1,4 @@
-name: CI workflow testing
+name: CI training workflow
 on:
   workflow_dispatch:
   push:
