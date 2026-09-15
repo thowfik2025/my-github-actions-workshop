@@ -64,6 +64,17 @@ jobs:
         run: npm ci
       - name: Run lint
         run: npm run lint
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download production build
+        uses: actions/download-artifact@v4
+        with:
+          name: Production build
+          path: dist
+      - name: check downloaded build
+        run: ls -la dist
           
         
         
