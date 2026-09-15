@@ -82,6 +82,11 @@ jobs:
         with:
           name: production-build
           path: dist
+      - name: Verify downloaded build
+        run: |
+          ls -la dist
+          ls -la dist/assets
+          cat dist/index.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
